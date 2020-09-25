@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBack"
+    tools:context=".WhoIsTheKiller">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:gravity="center"
+        android:text="Время вышло"
+        android:textColor="@color/colorText"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        app:srcCompat="@drawable/uit" />
+
+
+    <Button
+        android:id="@+id/one"
+        style="@style/FaceButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:onClick="one"
+        android:text="Елена Стурапова"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/two"
+        style="@style/FaceButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:onClick="two"
+        android:text="Люся Манеева"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/three"
+        style="@style/FaceButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:onClick="three"
+        android:text="Даниил Скачков"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/four"
+        style="@style/FaceButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:onClick="four"
+        android:text="Генадий Скачков"
+        android:textSize="15sp" />
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.example.hellodetective.FragNotebook"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/notes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorText"
+        android:text="TextView" />
+
+
+</LinearLayout>

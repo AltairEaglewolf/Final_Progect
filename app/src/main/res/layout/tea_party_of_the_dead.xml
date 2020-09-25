@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBack"
+    tools:context=".TeaPartyOfTheDead">
+
+
+    <ImageView
+        android:id="@+id/director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.731"
+        app:srcCompat="@drawable/director" />
+
+    <ImageView
+        android:id="@+id/sister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.731"
+        app:srcCompat="@drawable/sister_alive" />
+
+    <ImageView
+        android:id="@+id/luci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.731"
+        app:srcCompat="@drawable/luci" />
+
+    <ImageView
+        android:id="@+id/operator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.731"
+        app:srcCompat="@drawable/operator_killer" />
+
+    <TextView
+        android:id="@+id/speech"
+        android:layout_width="match_parent"
+        android:layout_height="169dp"
+        android:background="@color/colorTextBack"
+        android:onClick="speech"
+        android:text="TextView"
+        android:textColor="@color/colorText"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/who"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorTextBack"
+        android:text="TextView"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/speech"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <Button
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="398dp"
+        android:onClick="first"
+        android:text="Осмотреть тела"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="second"
+        android:text="Поговорить с выжившей сестрой"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/third"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="third"
+        android:text="Поговорить с гримёршей"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/second"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/fourth"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="fourth"
+        android:text="Поговорить с оператором"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/third"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/fifth"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="fifth"
+        android:text="Поговорить с режиссёром"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourth"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="308dp"
+        android:onClick="back"
+        android:text="Назад"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/first_first"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="first_first"
+        android:text="Осмотреть сестру (Наталья Стурапова)"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/first_second"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="first_second"
+        android:text="Осмотреть “отца” (Георгий Жирнов)"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_first"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/first_third"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="first_third"
+        android:text="Осмотреть “гостя” (Макар Ларуев)"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_second"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/second_first"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="second_first"
+        android:text="@string/ask_about_sister"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/second_second"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="second_second"
+        android:text="@string/ask_about_actor_father"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/second_first"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/second_third"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="second_third"
+        android:text="@string/ask_about_actor_guest"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/second_second"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/second_fourth"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="second_fourth"
+        android:text="@string/ask_about_luci"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/second_third"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/second_fifth"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="second_fifth"
+        android:text="@string/ask_about_director"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/second_fourth"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/second_sixth"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="second_sixth"
+        android:text="@string/ask_about_operator"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/second_fifth"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/third_first"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:onClick="third_first"
+        android:text="@string/ask_about_sisters"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/third_second"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="third_second"
+        android:text="@string/ask_about_actor_father"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/third_first"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/third_third"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="third_third"
+        android:text="@string/ask_about_actor_guest"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/third_second"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/third_fourth"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="third_fourth"
+        android:text="@string/ask_about_operator"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/third_third"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/third_fifth"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="third_fifth"
+        android:text="@string/ask_about_director"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/third_fourth"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/fourth_first"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:onClick="fourth_first"
+        android:text="@string/ask_about_sisters"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/fourth_second"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="fourth_second"
+        android:text="@string/ask_about_actor_father"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourth_first"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/fourth_third"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="fourth_third"
+        android:text="@string/ask_about_actor_guest"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourth_second"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/fourth_fourth"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="fourth_fourth"
+        android:text="@string/ask_about_director"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourth_third"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/fourth_fifth"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="fourth_fifth"
+        android:text="@string/ask_about_luci"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourth_fourth"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/fourth_sixth"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="fourth_sixth"
+        android:text="@string/ask_about_second_education"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourth_fifth"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/fourth_seventh"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="fourth_seventh"
+        android:text="@string/ask_about_money"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourth_sixth"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/fourth_eight"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:onClick="fourth_eight"
+        android:text="@string/ask_about_conflict_guest"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourth_seventh"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/fifth_first"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:onClick="fifth_first"
+        android:text="@string/ask_about_sisters"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/fifth_second"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="fifth_second"
+        android:text="@string/ask_about_actor_father"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fifth_first"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/fifth_third"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="fifth_third"
+        android:text="@string/ask_about_actor_guest"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fifth_second"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/fifth_fourth"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="fifth_fourth"
+        android:text="@string/ask_about_luci"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fifth_third"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/fifth_fifth"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="fifth_fifth"
+        android:text="@string/ask_about_operator"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fifth_fourth"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/fifth_sixth"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="fifth_sixth"
+        android:text="@string/ask_about_second_education"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fifth_fifth"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/fifth_seventh"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:onClick="fifth_seventh"
+        android:text="@string/ask_about_conflict_father"
+        android:visibility="gone"
+        style="@style/FaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fifth_sixth"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <FrameLayout
+        android:id="@+id/frgmContainer"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_marginBottom="168dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <ImageView
+            android:id="@+id/notes"
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/note" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="221dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Time"
+            android:textColor="@color/colorText"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="saving"
+            app:srcCompat="@android:drawable/ic_menu_save" />
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="menu"
+            app:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menuButton"
+        android:layout_width="match_parent"
+        android:layout_height="142dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/who"
+        app:layout_constraintTop_toTopOf="@+id/frgmContainer"
+        tools:layout_editor_absoluteX="1dp">
+
+        <Button
+
+            android:id="@+id/exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="exit"
+            android:text="Выйти в главное меню" />
+
+        <Button
+            android:id="@+id/rules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="rules"
+            android:text=" Правила" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

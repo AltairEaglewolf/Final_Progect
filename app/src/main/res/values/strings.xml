@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Добрый день, детектив</string>
+
+
+    <string name="ask_about_sister">Спросить про Наталью Стурапову (сестра)</string>
+
+    <string name="ask_about_sisters">Спросить про Наталью и Елену Стураповых (сёстры)</string>
+
+    <string name="ask_about_actor_father">Спросить про Жирнова Георгия («отец»)</string>
+
+    <string name="ask_about_actor_guest">Спросить про Макара Ларуева («гость»)</string>
+
+    <string name="ask_about_luci">Спросить про Люсю Манееву (гримёрша)</string>
+
+    <string name="ask_about_director">Спросить про Генадия Скачкова (режиссёр)</string>
+
+    <string name="ask_about_operator">Спросить про Даниила Скачкова (оператор)</string>
+
+    <string name="ask_about_second_education">Спросить про второе образование</string>
+
+    <string name="ask_about_money">Спросить про проблемы с деньгами </string>
+
+    <string name="ask_about_conflict_guest">Спросить про конфликт с Макаром Ларуевым («гость»)</string>
+
+    <string name="ask_about_conflict_father">Спросить про спор с Жирновым Георгием («отец»)</string>
+
+
+</resources>
