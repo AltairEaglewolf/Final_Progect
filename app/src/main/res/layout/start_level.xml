@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBack"
-    tools:context=".StartLevel">
+    tools:context=".gameproces.StartLevel">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -49,8 +49,8 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="340dp"
-        android:layout_height="392dp"
+        android:layout_width="357dp"
+        android:layout_height="377dp"
         android:layout_marginBottom="8dp"
         android:text=" "
         android:textColor="@color/colorText"

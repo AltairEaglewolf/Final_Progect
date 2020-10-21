@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/colorBack"
-    tools:context=".WhoIsTheKiller">
+    tools:context=".gameproces.WhoIsTheKiller">
 
     <TextView
         android:id="@+id/textView8"
@@ -66,7 +66,7 @@
 
     <fragment
         android:id="@+id/fragment"
-        android:name="com.example.hellodetective.FragNotebook"
+        android:name="com.example.hellodetective.gameproces.FragNotebook"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"

@@ -1,4 +1,4 @@
-package com.example.hellodetective;
+package com.example.hellodetective.gameproces;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.hellodetective.MainActivity;
+import com.example.hellodetective.R;
 
 public class AreYouShureFinal extends AppCompatActivity {
 

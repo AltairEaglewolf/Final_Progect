@@ -8,11 +8,11 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WhoIsTheKiller"></activity>
+        <activity android:name=".gameproces.WhoIsTheKiller"></activity>
         <activity android:name=".Rules" />
-        <activity android:name=".AreYouShureFinal" />
-        <activity android:name=".StartLevel" />
-        <activity android:name=".LevelInProgres" />
+        <activity android:name=".gameproces.AreYouShureFinal" />
+        <activity android:name=".gameproces.StartLevel" />
+        <activity android:name=".gameproces.LevelInProgres" />
         <activity android:name=".TeaPartyOfTheDead" />
         <activity android:name=".LevelList" />
         <activity android:name=".MainActivity">

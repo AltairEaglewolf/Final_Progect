@@ -1,79 +1,29 @@
 package com.example.hellodetective;
 
+import android.content.res.Resources;
+
+import com.example.hellodetective.CharacterSpeech;
+import com.example.hellodetective.R;
+
 public class Sister {
     public CharacterSpeech one,two,three,four,five,six,seven,eight;
 
-    Sister (){
-        one = new CharacterSpeech ("Спросить про Наталью Стурапову (сестра)", "Она не должна была умирать. Наша жизнь только-только "+
-          "началась, мы не должны были расстаться так рано. Мы же близняшки, мы всегда должны быть вместе. Хотя… она порой такой дурочкой была ха "
-                + "ха… Такая вся из себя самоуверенная, забывает про тех, кто вокруг во время перепалок… Но это не "+
-                "делает её плохой нет нет нет. Она всегда ставила на место только тех, кто заслуживал этого.",0);
+    Sister (Resources resources){
+        one = new CharacterSpeech (resources.getString(R.string.ask_about_sister), resources.getString(R.string.sister_one),0);
 
-        two = new CharacterSpeech ("Спросить про Жирнова Георгия («отец»)", "Этот старик не заслужил такой участи… или заслужил… "
-                +"ха ха. Даже если он отправился на тот свет заслуженно, моя сестра не должна была его сопровождать, нет не должна.",0);
+        two = new CharacterSpeech (resources.getString(R.string.ask_about_actor_father), resources.getString(R.string.sister_two),0);
 
-        three = new CharacterSpeech ("Спросить про Макара Ларуева («гость»)", "Такой молодой и уже умер… даже семью завести не успел,"+
-                " хотя хотел. Теперь его семья будет там, но моя близняшка не должна была становиться её частью, она моя семья.",0);
+        three = new CharacterSpeech (resources.getString(R.string.ask_about_actor_guest), resources.getString(R.string.sister_three),0);
 
-        four = new CharacterSpeech ("Спросить про Люсю Манееву (гримёрша) ", "Она даже заносчивее моей сестры, она не любила её поскольку "
-                +"моя близняшка могла поставить её на место. Нет нет… Я не позволю ей расслабится, я буду так же ставить " +
-                "её на место, буду так же противиться этой сплетнице.",0);
+        four = new CharacterSpeech (resources.getString(R.string.ask_about_luci), resources.getString(R.string.sister_four),0);
 
-        five = new CharacterSpeech ("Спросить про Генадия Скачкова (режиссёр)", "Я была о нём большего мнения, но он ничего НИЧЕГО не смог "+
-             "сделать, когда выяснилось, что моя сестра умирает. А он должен был, у него же есть медицинское образование, Люси (гримёрша) говорила об этом. "
-             + "Хотя что это я? Ха ха этой дамочке верить опасно, эта сорока и не такого наговорить может ха ха ха",0); //не спрашивал про оператора
+        five = new CharacterSpeech (resources.getString(R.string.ask_about_director), resources.getString(R.string.sister_five),0); //не спрашивал про оператора
 
-        six = new CharacterSpeech ("Спросить про Генадия Скачкова (режиссёр)", "Я была о нём большего мнения, он, как и Даня (оператор) ничего ничего "
-                +"не смог сделать, несмотря на то что он тоже врач, Люси (гримёрша) говорила об этом. Хотя что это я? "
-                + "Ха ха этой дамочке верить опасно, эта сорока и не такого наговорить может ха ха ха",0); //спрашивал про оператора
+        six = new CharacterSpeech (resources.getString(R.string.ask_about_director), resources.getString(R.string.sister_six),0); //спрашивал про оператора
 
-        seven = new CharacterSpeech ("Спросить про Даниила Скачкова (оператор)", "Бедолага… у него и так сейчас с деньгами проблемы, а тут ещё и это… "
-                +"Хотя он бы мог помочь, он же как раз второе образование получает, на врача.  А мы хотели ему с сестрой помочь, хотели, но он "
-                + "отказался. Она такая добрая, не любит смотреть как другим тяжело, пусть и в своей форме. Точнее не любила…ха ха",0); //не спрашивал про режиссёра
+        seven = new CharacterSpeech (resources.getString(R.string.ask_about_operator), resources.getString(R.string.sister_seven),0); //не спрашивал про режиссёра
 
-        eight = new CharacterSpeech ("Спросить про Даниила Скачкова (оператор)", "Бедолага… у него и так сейчас с деньгами проблемы, а тут ещё и это… "
-                +"Хотя он бы мог помочь, он же как раз второе образование получает, на врача, как и Генадий Борисович (режиссёр). "
-                + "А мы хотели ему с сестрой помочь, хотели, но он отказался. Она такая добрая, не любит смотреть как другим тяжело,"
-                + "пусть и в своей форме. Точнее не любила…ха ха" ,0); //спрашивал про режиссёра
+        eight = new CharacterSpeech (resources.getString(R.string.ask_about_operator), resources.getString(R.string.sister_eight),0); //спрашивал про режиссёра
     }
 }
 
- /*        one = new CharacterSpeech ("",""+
-                "" +
-                ""+
-                "",0); //
-
-        two = new CharacterSpeech ("", ""+
-                "" +
-                ""+
-                "",0); //
-
-        three = new CharacterSpeech ("", ""+
-                "" +
-                ""+
-                "",0); //
-
-        four = new CharacterSpeech ("", ""+
-                "" +
-                ""+
-                "",0); //
-
-        five = new CharacterSpeech ("", ""+
-                "" +
-                ""+
-                "",0); //
-
-        six = new CharacterSpeech ("", ""+
-                "" +
-                ""+
-                "",0); //
-
-        seven = new CharacterSpeech ("", ""+
-                "" +
-                ""+
-                "",0); //
-
-        eight = new CharacterSpeech ("", ""+
-                "" +
-                ""+
-                "" ,0); // */

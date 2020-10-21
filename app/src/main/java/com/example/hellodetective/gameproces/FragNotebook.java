@@ -1,4 +1,4 @@
-package com.example.hellodetective;
+package com.example.hellodetective.gameproces;
 
 
 
@@ -14,6 +14,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.hellodetective.R;
 
 
 public class FragNotebook extends Fragment {

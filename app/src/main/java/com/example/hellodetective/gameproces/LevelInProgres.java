@@ -1,8 +1,10 @@
-package com.example.hellodetective;
+package com.example.hellodetective.gameproces;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.hellodetective.R;
 
 public class LevelInProgres extends AppCompatActivity {
 

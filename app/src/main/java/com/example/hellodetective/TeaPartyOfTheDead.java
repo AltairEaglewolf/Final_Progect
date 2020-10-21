@@ -20,6 +20,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.hellodetective.gameproces.FragNotebook;
+import com.example.hellodetective.gameproces.WhoIsTheKiller;
+
 public class TeaPartyOfTheDead extends AppCompatActivity {
 
 
@@ -97,11 +100,11 @@ public class TeaPartyOfTheDead extends AppCompatActivity {
 
         menuLayout = (LinearLayout) findViewById(R.id.menuButton);
         frag_note = new FragNotebook();
-        corpse = new Corpse();
-        alive_sister = new Sister();
-        makeup = new Makeup();
-        operator_target = new Operator();
-        director_ = new Director();
+        corpse = new Corpse(getResources());
+        alive_sister = new Sister(getResources());
+        makeup = new Makeup(getResources());
+        operator_target = new Operator(getResources());
+        director_ = new Director(getResources());
 
 
         director = (ImageView) findViewById(R.id.director);
@@ -178,9 +181,19 @@ public class TeaPartyOfTheDead extends AppCompatActivity {
                     long minute = millisUntilFinished/ 60000;
                     long seconds = (millisUntilFinished/1000)%60;
 
-                    if (seconds <10) {
-                        time.setText(minute +":0" + seconds);
-                    } else
+                    if ((minute <10)&&(seconds <10)) {
+                        time.setText("0"+ minute +":0" + seconds);
+                    }
+
+                    else
+                    if ((minute >10)&&(seconds <10)) {
+                        time.setText(minute +":0" + seconds);}
+
+                    else
+                    if ((minute <10)&&(seconds >10)) {
+                        time.setText("0"+minute+":" + seconds);}
+
+                    else
                     {
                         time.setText(minute +":" + seconds);
                     }
@@ -191,7 +204,7 @@ public class TeaPartyOfTheDead extends AppCompatActivity {
 
             public void onFinish (){
 
-                timeRemaining = 64000;
+                timeRemaining = 600000;
 
                 speech_situation = 0;
                 tap_situation = 0;
@@ -274,13 +287,22 @@ public class TeaPartyOfTheDead extends AppCompatActivity {
                                     long minute = millisUntilFinished/ 60000;
                                     long seconds = (millisUntilFinished/1000)%60;
 
-                                    if (seconds <10) {
-                                        time.setText(minute +":0" + seconds);
-                                    } else
+                                    if ((minute <10)&&(seconds <10)) {
+                                        time.setText("0"+ minute +":0" + seconds);
+                                    }
+
+                                    else
+                                    if ((minute >10)&&(seconds <10)) {
+                                        time.setText(minute +":0" + seconds);}
+
+                                    else
+                                    if ((minute <10)&&(seconds >10)) {
+                                        time.setText("0"+minute+":" + seconds);}
+
+                                    else
                                     {
                                         time.setText(minute +":" + seconds);
                                     }
-
                                     timeRemaining = millisUntilFinished;
                                 }
 
@@ -288,7 +310,7 @@ public class TeaPartyOfTheDead extends AppCompatActivity {
 
                             public void onFinish (){
 
-                                timeRemaining = 64000;
+                                timeRemaining = 600000;
 
                                 speech_situation = 0;
                                 tap_situation = 0;
@@ -430,7 +452,7 @@ public class TeaPartyOfTheDead extends AppCompatActivity {
 
     void loadGame(){
         sharedPreferences = getPreferences(MODE_PRIVATE);
-        timeSave = sharedPreferences.getLong(SAVED_TIME, 64000);
+        timeSave = sharedPreferences.getLong(SAVED_TIME, 600000);
         speech_situation = sharedPreferences.getInt(SPEECH_SITUATION,0);
         tap_situation = sharedPreferences.getInt(TAP_SITUATION,0);
 
@@ -679,13 +701,22 @@ public class TeaPartyOfTheDead extends AppCompatActivity {
                         long minute = millisUntilFinished/ 60000;
                         long seconds = (millisUntilFinished/1000)%60;
 
-                        if (seconds <10) {
-                            time.setText(minute +":0" + seconds);
-                        } else
+                        if ((minute <10)&&(seconds <10)) {
+                            time.setText("0"+ minute +":0" + seconds);
+                        }
+
+                        else
+                        if ((minute >10)&&(seconds <10)) {
+                            time.setText(minute +":0" + seconds);}
+
+                        else
+                        if ((minute <10)&&(seconds >10)) {
+                            time.setText("0"+minute+":" + seconds);}
+
+                        else
                         {
                             time.setText(minute +":" + seconds);
                         }
-
                         timeRemaining = millisUntilFinished;
                     }
 
@@ -693,7 +724,7 @@ public class TeaPartyOfTheDead extends AppCompatActivity {
 
                 public void onFinish (){
 
-                    timeRemaining = 64000;
+                    timeRemaining = 600000;
 
                     speech_situation = 0;
                     tap_situation = 0;

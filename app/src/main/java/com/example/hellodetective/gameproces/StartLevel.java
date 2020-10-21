@@ -1,4 +1,4 @@
-package com.example.hellodetective;
+package com.example.hellodetective.gameproces;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.TextView;
+
+import com.example.hellodetective.R;
+import com.example.hellodetective.TeaPartyOfTheDead;
 
 public class StartLevel extends AppCompatActivity {
 
@@ -20,6 +23,7 @@ public class StartLevel extends AppCompatActivity {
 
         name = (TextView) findViewById(R.id.textView3);
         description = (TextView) findViewById(R.id.textView4);
+
         description.setMovementMethod(new ScrollingMovementMethod());
 
         Bundle arguments = getIntent().getExtras();

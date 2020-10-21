@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.example.hellodetective.gameproces.StartLevel;
+
 public class LevelList extends ListActivity {
 
     private ArrayAdapter<String> mAdapter;
@@ -34,13 +36,13 @@ public class LevelList extends ListActivity {
                 a.putExtra("what","one");
                 startActivity(a);
                 break;
-            case 1:
+            default:
                 a.putExtra("what","not");
                 startActivity(a);
                 break;
         } // не "if" так как удобнее добавлять уровни в будущем
     }
 
-    final String[] levels = new String[] { "Чаепитие мёртвых", " ", " ", " ", " ", " ", " ", " ", " " };
+    final String[] levels = new String[] { "Чаепитие мёртвых", " ", " ", " ", " ", " ", " ", " ", " " , " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
 
 }
